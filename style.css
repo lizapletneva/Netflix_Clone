@@ -17,8 +17,8 @@ html, body {
     height: 400px;
     overflow: hidden;
     transform: scale(1);
-    animation: anim-netflix 0.8s ease-in forwards;
-    animation-delay: 0.6s;
+    animation: anim-netflix 1.2s ease-in forwards;
+    animation-delay: 2.0s;
 }
 
 
@@ -29,6 +29,7 @@ html, body {
     top:400px;
     position: absolute;
     animation: anim-top 0.2s linear forwards;
+    animation-delay: 1.0s;
 }
 
 .n-1::after{
@@ -50,7 +51,7 @@ html, body {
     top: 400px;
     position: absolute;
     animation: anim-top 0.2s linear forwards;
-    animation-delay: 0.4s;
+    animation-delay: 1.4s;
 
 }
 
@@ -81,7 +82,7 @@ html, body {
     background-color: #E50815;
     height: 0px;
     animation: anim-filler 0.2s linear forwards;
-    animation-delay: 0.2s;
+    animation-delay: 1.2s;
 }
 
 @keyframes anim-netflix {
@@ -131,6 +132,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     transition: all 0.4s;
+     opacity: 0;
 }
 
 .whos-watching h1 {
@@ -148,6 +150,16 @@ html, body {
     height: 200px;
     border-radius: 2%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+    animation: bounce-in 0.8s ease-out forwards;
+}
+
+.profile-pic.enlarged {
+    transform: scale(1.2);
+}
+
+.profile-link.hidden {
+    display: none;
 }
 
 span {
@@ -156,4 +168,44 @@ span {
 
 a:hover {
     transform: scale(1.1);
+}
+
+.loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid white;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-top: 50px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/*Personal pages*/
+
+.personal-page{
+    text-align: center;
+    display: hidden;
 }

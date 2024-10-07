@@ -21,24 +21,51 @@
     </div>
 
     <!-- Who's Watching Page (Initially hidden) -->
-    <div class="whos-watching hidden"> <!-- Add 'hidden' class to hide initially -->
+    <div class="whos-watching hidden">
         <h1>Who's watching?</h1>
+
         <div id="profile-section">
-            <a href="#">
+            <a href="#" class="profile-link" data-profile="Ryan">
                 <img src="NFIcon1.jpg" class="profile-pic" alt="Ryan's profile picture">
                 <span>Ryan</span>
+                <div class="loading-spinner hidden"></div>
             </a>
-            <a href="#">
+
+            <a href="#" class="profile-link" data-profile="Liza">
                 <img src="NFIcon2.jpg" class="profile-pic" alt="Liza's profile picture">
                 <span>Liza</span>
+                <div class="loading-spinner hidden"></div>
             </a>
-            <a href="#">
+
+            <a href="#" class="profile-link" data-profile="Kat">
                 <img src="NFIcon3.jpg" class="profile-pic" alt="Kat's profile picture">
                 <span>Kat</span>
+                <div class="loading-spinner hidden"></div>
             </a>
+            
         </div>
     </div>
 
+    <!-- Pages for each user (Initially hidden) -->
+    <div id="ryan-page" class="personal-page hidden">
+        <h1>Welcome, Ryan!</h1>
+        <p>This is Ryan's personalized page.</p>
+    </div>
 
-</body>
+    <div id="liza-page" class="personal-page hidden">
+        <h1>Welcome, Liza!</h1>
+        <p>This is Liza's personalized page.</p>
+    </div>
+
+    <div id="kat-page" class="personal-page hidden">
+        <h1>Welcome, Kat!</h1>
+        <p>This is Kat's personalized page.</p>
+    </div>
+
+
+
+
+
+    </body>
+
 </html>
