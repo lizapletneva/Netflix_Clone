@@ -2,6 +2,7 @@
 
 // Hide Netflix logo animation and show profile selection
 document.addEventListener("DOMContentLoaded", () => {
+
     setTimeout(() => {
         document.querySelector('.netflix').style.display = 'none';
         document.querySelector('.whos-watching').classList.remove('hidden');
@@ -15,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
                  link.style.animation = 'bounce-in 0.8s ease-out forwards';  // Apply bounce animation
              }, index * 200);  // Delay for staggered animation effect (200ms)
          });
-     }, 3000);
+     }, 5000);
+    });
 
 
 
@@ -64,4 +66,3 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 3000); // 4-second delay for loading
         });
     });
-});
