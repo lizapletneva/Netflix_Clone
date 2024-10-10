@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('.whos-watching').classList.remove('hidden');
         document.querySelector('.whos-watching').style.visibility = 'visible';
 
-         // Apply bounce effect to each profile with a staggered delay
+         // Apply bounce effect to each profile 
          const profileLinks = document.querySelectorAll('.profile-link');
          profileLinks.forEach((link, index) => {
              setTimeout(() => {
                  link.style.opacity = '1';  // Show the profile
                  link.style.animation = 'bounce-in 0.8s ease-out forwards';  // Apply bounce animation
-             }, index * 200);  // Delay for staggered animation effect (200ms)
+             }, index * 200);  // Delay for staggered animation effect
          });
      }, 5000);
     });
@@ -26,11 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const profileLinks = document.querySelectorAll('.profile-link');
     profileLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault();  // Prevent link navigation
+            event.preventDefault(); 
 
-            // Get the clicked profile
-            const profile = link.getAttribute('data-profile');
-
+            
+            const profile = link.getAttribute('data-profile'); // Get the clicked profile
             document.querySelector('.whos-watching h1').style.display = 'none';
 
             // Hide all other profiles and names
@@ -63,6 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else if (profile === 'Kat') {
                     document.querySelector('#kat-page').style.display = 'block';
                 }
-            }, 3000); // 4-second delay for loading
+            }, 1000); // 4-second delay for loading
         });
     });
