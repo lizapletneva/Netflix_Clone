@@ -210,14 +210,16 @@ a:hover {
     height: 100%;
     text-align: left;
     text-indent: 5%;
-    display: hidden;
+    display: none;
     overflow-y: scroll;
 }
 
-
+.hidden{
+    display: none;
+}
 
 .LizaMovies{
-    margin: 325px 0 0 225px;
+    margin: 0 0 0 225px;
     height: 50%;
     width:70%;
     display:flex;
@@ -238,6 +240,10 @@ a:hover {
     width:50%;
 }
 
+.MovieTitle{
+    margin-top: 450px;
+    text-align: left;
+}
 
 .LizaTV{
     margin: 5px 0 50px 225px;
@@ -262,32 +268,46 @@ a:hover {
 }
 
 .WelcomeLiza{
-    position: absolute;
+    position: fixed;
+    height:60%;
+    width:95%;
+    background-color: black;
+    left: 2.5%;
 }
 
+
+#previewImage {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    left:40%;
+}
+
+#previewText {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.LM:hover ~ .WelcomeLiza #previewImage,
+.LTV:hover ~ .WelcomeLiza #previewImage,
+.LM:hover ~ .WelcomeLiza #previewText,
+.LTV:hover ~ .WelcomeLiza #previewText {
+    opacity: 1;
+}
+
+
 .WelcomeLiza img {
-    height: 50%;
-    width: 92%;
-    outline: red 5px solid;
+    height: 60%;
+    width: 50%;
     position: fixed;
-    top: 0.5%;
-    left:3%;
+    object-fit: cover;
     z-index: 10;
 }
 
 .WelcomeLiza h1 {
     position: absolute;
-    top: 20px; /* Adjust as needed */
-    left: 50%;
+    top: 20px; 
+    left: 20%;
     text-align: center;
     color: white;
     z-index: 20; /* Higher than the image */
 }
-
-
-
-
-
-
-
-

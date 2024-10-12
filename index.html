@@ -20,8 +20,6 @@
         </div>
     </div>
 
-    <audio id="netflix-sound" src="sound.mp3"></audio>
-
 
     <!-- Who's Watching Page (Initially hidden) -->
     <div class="whos-watching hidden">
@@ -49,8 +47,12 @@
         </div>
     </div>
 
+
     <!-- Pages for each user (Initially hidden) -->
 
+
+
+    <!--Ryan Page-->
     <div id="ryan-page" class="personal-page hidden">
         <h1 id = "welcome">Welcome, Ryan!</h1>
         <div id = "RyanMovies">
@@ -65,52 +67,94 @@
     </div>
 
 
-
-
-
-
-
+    <!--Liza Page-->
     <div id="liza-page" class="personal-page hidden">
 
-        
+        <!--Welcome Liza Header-->
         <div class = "WelcomeLiza">
             <h1>Welcome, Liza!</h1>
-            <img src = "filler.jpg" alt = "Black screen for now">
+            <h1 id="previewText">Hover over a movie/TV show to see the preview</h1>
+            <img id="previewImage" src="filler.jpg" alt="Preview Image">
         </div>
 
-        <h1>Movies</h1>
+    
+        <!-- Movie Label-->
+        <div class = "MovieTitle">
+            <h1>Movies</h1>
+        </div>
+
+        <!--Movie Selection-->
         <div class = "LizaMovies">
-            <img src="Interstellar.jpeg" class="LM" alt="Interstellar">
-            <img src="Happyness.jpg" class="LM" alt="The Pursuit of Happyness">
-            <img src="Shutter.jpeg" class="LM" alt="Shutter Island">
-            <img src="gift.jpg" class="LM" alt="The Gift">
-            <img src="avatar.jpg" class="LM" alt="Avatar">
-            <img src="titanic.jpg" class="LM" alt="Titanic">
-            <img src="beautiful.jpg" class="LM" alt="A Beautiful Mind">
-            <img src="network.jpg" class="LM" alt="The Social Network">
+            <img src="Interstellar.jpeg" class="LM" alt="Interstellar"
+            data-preview-img="InterstellarFiller.png">
+
+            <img src="Happyness.jpg" class="LM" alt="The Pursuit of Happyness"
+            data-preview-img="HappyFiller.jpg">
+
+            <img src="Shutter.jpeg" class="LM" alt="Shutter Island"
+            data-preview-img="shutterfiller.jpeg">
+
+            <img src="gift.jpg" class="LM" alt="The Gift"
+            data-preview-img="thegiftfiller.jpg">
+
+            <img src="avatar.jpg" class="LM" alt="Avatar"
+            data-preview-img="avatarfiller.jpg">
+
+            <img src="titanic.jpg" class="LM" alt="Titanic"
+            data-preview-img= "titanicfiller.jpg">
+
+            <img src="beautiful.jpg" class="LM" alt="A Beautiful Mind"
+            data-preview-img="mindfiller.webp">
+
+            <img src="network.jpg" class="LM" alt="The Social Network"
+            data-preview-img="netwrokfiller.jpg">
         </div>
 
+        <!-- TV Label-->
+        <div class = "TVTitle">
+            <h1>TV shows</h1>
+        </div>
 
-        <h1>TV shows</h1>
+        <!-- TV Selection-->
         <div class = "LizaTV">
-            <img src="suits.jpg" class="LTV" alt="Suits">
-            <img src="Greys.jpg" class="LTV" alt="Grey's Anatomy">
-            <img src="robot.jpg" class="LTV" alt="Mr. Robot">
-            <img src="blacklist.jpg" class="LTV" alt="Blacklist">
-            <img src="mirror.jpg" class="LTV" alt="Black Mirror">
-            <img src="gossip.jpg" class="LTV" alt="Gossip Girl">
-            <img src="sopranos.jpg" class="LTV" alt="Sopranos">
-            <img src="valley.jpg" class="LTV" alt="Silicon Valley">
+            <img src="suits.jpg" class="LTV" alt="Suits"
+            data-preview-img="suitfiller.webp">
+
+            <img src="Greys.jpg" class="LTV" alt="Grey's Anatomy"
+            data-preview-img="greysfiller.jpg">
+
+            <img src="robot.jpg" class="LTV" alt="Mr. Robot"
+            data-preview-img="robotfiller.webp">
+
+            <img src="blacklist.jpg" class="LTV" alt="Blacklist"
+            data-preview-img="blacklistfiller.webp">
+
+            <img src="mirror.jpg" class="LTV" alt="Black Mirror"
+            data-preview-img="mirrorfiller.avif">
+
+            <img src="gossip.jpg" class="LTV" alt="Gossip Girl"
+            data-preview-img="gossipfiller.jpg">
+
+            <img src="sopranos.jpg" class="LTV" alt="Sopranos"
+            data-preview-img="sopranosfiller.webp">
+
+            <img src="valley.jpg" class="LTV" alt="Silicon Valley"
+            data-preview-img="valleyfiller.jpg">
         </div>
 
-        <h1>Watch List</h1>
+        <!-- Watch List Label-->
+        <div class = "WatchListTitle">
+            <h1>Watch List</h1>
+        </div>
+
+        <!--Watch List Selection-->
         <div class = "LizaWatch">
             <img src="" class="" alt="">
             <img src="" class="" alt="">
             <img src="" class="" alt="">
-
         </div>
-    </div>
+
+    </div> <!--End of Liza Page-->
 
 
 
