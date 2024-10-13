@@ -279,7 +279,7 @@ a:hover {
 #previewImage {
     opacity: 0;
     transition: opacity 0.3s ease;
-    left:40%;
+    left:44%;
 }
 
 #previewText {
@@ -296,18 +296,18 @@ a:hover {
 
 
 .WelcomeLiza img {
-    height: 60%;
+    height: 55%;
     width: 50%;
     position: fixed;
     object-fit: cover;
     z-index: 10;
+    margin-top: 5px;
 }
 
 .WelcomeLiza h1 {
     position: absolute;
     top: 20px; 
-    left: 20%;
-    text-align: center;
+    left:10%;
     color: white;
     z-index: 20; /* Higher than the image */
 }

@@ -74,15 +74,5 @@ document.addEventListener("DOMContentLoaded", () => {
             if (previewImage) previewImage.style.opacity = '1';
             if (previewText) previewText.style.opacity = '1';
         });
-
-        // Optionally, hide the preview when the user stops hovering
-        item.addEventListener('mouseout', () => {
-            if (previewImage) previewImage.src = "filler.jpg"; // Reset to the original filler image
-            if (previewText) previewText.textContent = ""; // Clear the text
-
-            // Hide the preview by changing the opacity
-            if (previewImage) previewImage.style.opacity = '0';
-            if (previewText) previewText.style.opacity = '0';
-        });
     });
 });
