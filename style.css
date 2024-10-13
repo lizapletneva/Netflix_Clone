@@ -21,7 +21,6 @@ html, body {
     animation-delay: 2.0s;
 }
 
-
 .n-1{
     background-color: #B10510;
     height: 400px;
@@ -218,7 +217,9 @@ a:hover {
     display: none;
 }
 
-.LizaMovies{
+.LizaMovies, 
+.RyanMovies,
+.KatMovies{
     margin: 0 0 0 225px;
     height: 50%;
     width:70%;
@@ -227,7 +228,9 @@ a:hover {
     gap:5px;
 }
 
-.LizaMovies img{
+.LizaMovies img,
+.RyanMovies img,
+.KatMovies img{
     width:15%;
     height:70%;
     object-fit: cover;
@@ -236,7 +239,9 @@ a:hover {
     transition: all ease-in-out 0.5s;
 }
 
-.LizaMovies img:hover{
+.LizaMovies img:hover,
+.RyanMovies img:hover,
+.KatMovies img:hover{
     width:50%;
 }
 
@@ -245,7 +250,9 @@ a:hover {
     text-align: left;
 }
 
-.LizaTV{
+.LizaTV,
+.RyanTV,
+.KatTV{
     margin: 5px 0 50px 225px;
     height: 50%;
     width:70%;
@@ -254,7 +261,9 @@ a:hover {
     gap:5px;
 }
 
-.LizaTV img{
+.LizaTV img,
+.RyanTV img,
+.KatTV img{
     width:15%;
     height:70%;
     object-fit: cover;
@@ -263,29 +272,38 @@ a:hover {
     transition: all ease-in-out 0.5s;
 }
 
-.LizaTV img:hover{
+.LizaTV img:hover,
+.RyanTV img:hover,
+.KatTV img:hover{
     width:50%;
 }
 
-.WelcomeLiza{
+.WelcomeLiza, 
+.WelcomeRyan,
+.WelcomeKat{
     position: fixed;
     height:60%;
     width:95%;
     background-color: black;
     left: 2.5%;
+    z-index: 10;
 }
 
 
-#previewImage {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    left:44%;
-}
-
-#previewText {
+.previewImage,
+.previewImageR,
+.previewImageK {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
+.previewText,
+.previewTextR,
+.previewTextk {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 
 .LM:hover ~ .WelcomeLiza #previewImage,
 .LTV:hover ~ .WelcomeLiza #previewImage,
@@ -294,20 +312,42 @@ a:hover {
     opacity: 1;
 }
 
+.RM:hover ~ .WelcomeRyan #previewImageR,
+.RTV:hover ~ .WelcomeRyan #previewImageR,
+.RM:hover ~ .WelcomeRyan #previewTextR,
+.RTV:hover ~ .WelcomeRyan #previewTextR {
+    opacity: 1;
+}
 
-.WelcomeLiza img {
+.KM:hover ~ .WelcomeKat #previewImageK,
+.KTV:hover ~ .WelcomeKat #previewImageK,
+.KM:hover ~ .WelcomeKat #previewTextK,
+.KTV:hover ~ .WelcomeKat #previewTextK {
+    opacity: 1;
+}
+
+
+.WelcomeLiza img,
+.WelcomeRyan img,
+.WelcomeKat img{
     height: 55%;
     width: 50%;
     position: fixed;
     object-fit: cover;
     z-index: 10;
-    margin-top: 5px;
+    margin-top: 20px;
+    left: 42%;
+    outline: 5px solid white;
 }
 
-.WelcomeLiza h1 {
+.WelcomeLiza h1, 
+.WelcomeRyan h1,
+.WelcomeKat h1{
     position: absolute;
     top: 20px; 
-    left:10%;
     color: white;
-    z-index: 20; /* Higher than the image */
+    height: 80%;
+    width: 35%;
+    left: 5%;
+    z-index: 20; /* Higher than the image*/ 
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src = "script.js" defer></script>
 </head>
+
 <body>
     <!-- Netflix Logo Animation -->
     <div class="netflix">
@@ -50,27 +51,109 @@
 
     <!-- Pages for each user (Initially hidden) -->
 
-
-
     <!--Ryan Page-->
     <div id="ryan-page" class="personal-page hidden">
-        <h1 id = "welcome">Welcome, Ryan!</h1>
 
+        <div class = "WelcomeRyan">
+            <h1 id="previewTextR">Welcome Ryan!</h1>
+            <img id="previewImageR" src="filler.jpg" alt="Preview Image">
+        </div>
 
-        <div id = "RyanMovies">
+        <!--Movie Label-->
+        <div class = "MovieTitle">
             <h1>Movies</h1>
         </div>
 
+         <!--Movie Selection-->
+         <div class = "RyanMovies">
+            <img src="Interstellar.jpeg" class="RM" alt="Interstellar"
+            data-preview-imgR="InterstellarFiller.png"
+            data-preview-textR="Interstellar">
 
-        <div id = "RyanTV">
+            <img src="Happyness.jpg" class="RM" alt="The Pursuit of Happyness"
+            data-preview-imgR="HappyFiller.jpg"
+            data-preview-textR="The Pursuit of Happyness">
+
+            <img src="Shutter.jpeg" class="RM" alt="Shutter Island"
+            data-preview-imgR="shutterfiller.jpeg"
+            data-preview-textR="Shutter Island">
+
+            <img src="gift.jpg" class="RM" alt="The Gift"
+            data-preview-imgR="thegiftfiller.jpg"
+            data-preview-textR="The Gift">
+
+            <img src="avatar.jpg" class="RM" alt="Avatar"
+            data-preview-imgR="avatarfiller.jpg"
+            data-preview-textR="Avatar">
+
+            <img src="titanic.jpg" class="RM" alt="Titanic"
+            data-preview-imgR= "titanicfiller.jpg"
+            data-preview-textR="Titanic">
+
+            <img src="beautiful.jpg" class="RM" alt="A Beautiful Mind"
+            data-preview-imgR="mindfiller.webp"
+            data-preview-textR="A Beautiful Mind">
+
+            <img src="network.jpg" class="RM" alt="The Social Network"
+            data-preview-imgR="netwrokfiller.jpg"
+            data-preview-textR="The Social Network">
+        </div>
+
+        <!-- TV Label-->
+        <div class = "TVTitle">
             <h1>TV shows</h1>
         </div>
 
-        
-        <div id = "RyanWatch">
-            <h1>Watch List</h1>
+         <!-- TV Selection-->
+         <div class = "RyanTV">
+            <img src="suits.jpg" class="RTV" alt="Suits"
+            data-preview-imgR="suitfiller.webp"
+            data-preview-textR="Suits">
+
+            <img src="Greys.jpg" class="RTV" alt="Grey's Anatomy"
+            data-preview-imgR="greysfiller.jpg"
+            data-preview-textR="Grey's Anatomy">
+
+            <img src="robot.jpg" class="RTV" alt="Mr. Robot"
+            data-preview-imgR="robotfiller.webp"
+            data-preview-textR="Mr.Robot">
+
+            <img src="blacklist.jpg" class="RTV" alt="Blacklist"
+            data-preview-imgR="blacklistfiller.webp"
+            data-preview-textR="Blacklist">
+
+            <img src="mirror.jpg" class="RTV" alt="Black Mirror"
+            data-preview-imgR="mirrorfiller.avif"
+            data-preview-textR="Black Mirror">
+
+            <img src="gossip.jpg" class="RTV" alt="Gossip Girl"
+            data-preview-imgR="gossipfiller.jpg"
+            data-preview-textR="Gossip Girl">
+
+            <img src="sopranos.jpg" class="RTV" alt="Sopranos"
+            data-preview-imgR="sopranosfiller.webp"
+            data-preview-textR="Sopranos">
+
+            <img src="valley.jpg" class="RTV" alt="Silicon Valley"
+            data-preview-imgR="valleyfiller.jpg"
+            data-preview-textR="Silicon Valley">
         </div>
+
+       <!-- Watch List Label-->
+        <div class = "WatchListTitle">
+        <h1>Watch List</h1>
+     </div>
+
+    <!--Watch List Selection-->
+    <div class = "RyanWatch">
+        <img src="" class="" alt="">
+        <img src="" class="" alt="">
+        <img src="" class="" alt="">
     </div>
+
+</div> <!--End of Ryan Page-->
+
+
 
 
     <!--Liza Page-->
@@ -179,23 +262,111 @@
 
 
 
-
-
-
-
-
     <div id="kat-page" class="personal-page hidden">
-        <h1>Welcome, Kat!</h1>
-        <div id = "KatMovies">
+
+         <!--Welcome Kat Header-->
+         <div class = "WelcomeKat">
+            <h1 id="previewTextK">Welcome Kat!</h1>
+            <img id="previewImageK" src="filler.jpg" alt="Preview Image">
+        </div>
+
+
+        <!-- Movie Label-->
+        <div class = "MovieTitle">
             <h1>Movies</h1>
         </div>
-        <div id = "KatTV">
+
+         <!--Movie Selection-->
+         <div class = "KatMovies">
+            <img src="Interstellar.jpeg" class="KM" alt="Interstellar"
+            data-preview-imgK="InterstellarFiller.png"
+            data-preview-textK="Interstellar">
+
+            <img src="Happyness.jpg" class="KM" alt="The Pursuit of Happyness"
+            data-preview-imgK="HappyFiller.jpg"
+            data-preview-textK="The Pursuit of Happyness">
+
+            <img src="Shutter.jpeg" class="KM" alt="Shutter Island"
+            data-preview-imgK="shutterfiller.jpeg"
+            data-preview-textK="Shutter Island">
+
+            <img src="gift.jpg" class="KM" alt="The Gift"
+            data-preview-imgK="thegiftfiller.jpg"
+            data-preview-textK="The Gift">
+
+            <img src="avatar.jpg" class="KM" alt="Avatar"
+            data-preview-imgK="avatarfiller.jpg"
+            data-preview-textK="Avatar">
+
+            <img src="titanic.jpg" class="KM" alt="Titanic"
+            data-preview-imgK= "titanicfiller.jpg"
+            data-preview-textK="Titanic">
+
+            <img src="beautiful.jpg" class="KM" alt="A Beautiful Mind"
+            data-preview-imgK="mindfiller.webp"
+            data-preview-textK="A Beautiful Mind">
+
+            <img src="network.jpg" class="KM" alt="The Social Network"
+            data-preview-imgK="netwrokfiller.jpg"
+            data-preview-textK="The Social Network">
+        </div>
+
+
+         <!-- TV Label-->
+         <div class = "TVTitle">
             <h1>TV shows</h1>
         </div>
-        <div id = "KatWatch">
+
+
+         <!-- TV Selection-->
+         <div class = "KatTV">
+            <img src="suits.jpg" class="KTV" alt="Suits"
+            data-preview-imgK="suitfiller.webp"
+            data-preview-textK="Suits">
+
+            <img src="Greys.jpg" class="KTV" alt="Grey's Anatomy"
+            data-preview-imgK="greysfiller.jpg"
+            data-preview-textK="Grey's Anatomy">
+
+            <img src="robot.jpg" class="KTV" alt="Mr. Robot"
+            data-preview-imgK="robotfiller.webp"
+            data-preview-textK="Mr.Robot">
+
+            <img src="blacklist.jpg" class="KTV" alt="Blacklist"
+            data-preview-imgK="blacklistfiller.webp"
+            data-preview-textK="Blacklist">
+
+            <img src="mirror.jpg" class="KTV" alt="Black Mirror"
+            data-preview-imgK="mirrorfiller.avif"
+            data-preview-textK="Black Mirror">
+
+            <img src="gossip.jpg" class="KTV" alt="Gossip Girl"
+            data-preview-imgK="gossipfiller.jpg"
+            data-preview-textK="Gossip Girl">
+
+            <img src="sopranos.jpg" class="KTV" alt="Sopranos"
+            data-preview-imgK="sopranosfiller.webp"
+            data-preview-textK="Sopranos">
+
+            <img src="valley.jpg" class="KTV" alt="Silicon Valley"
+            data-preview-imgK="valleyfiller.jpg"
+            data-preview-textK="Silicon Valley">
+        </div>
+
+
+        <!-- Watch List Label-->
+        <div class = "WatchListTitle">
             <h1>Watch List</h1>
         </div>
-    </div>
+
+        <!--Watch List Selection-->
+        <div class = "KatWatch">
+            <img src="" class="" alt="">
+            <img src="" class="" alt="">
+            <img src="" class="" alt="">
+        </div>
+
+    </div> <!--End of Kat Page-->
 
 
     </body>
