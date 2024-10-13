@@ -56,17 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // Preview logic for movie/TV show hover effect Ryan
   const previewImageR = document.getElementById('previewImageR');
   const previewTextR = document.getElementById('previewTextR');
+  const summaryR = document.getElementById('summaryR')
 
   document.querySelectorAll('.RM, .RTV').forEach(item => {
       item.addEventListener('mouseover', () => {
           const previewImgSrc = item.getAttribute('data-preview-imgR');
           const previewTextContent = item.getAttribute('data-preview-textR');
+          const previewSummaryR = item.getAttribute("data-summaryR");
 
           if (previewImageR) previewImageR.src = previewImgSrc;
           if (previewTextR) previewTextR.textContent = previewTextContent;
+          if (summaryR) summaryR.textContent = previewSummaryR;
 
           if (previewImageR) previewImageR.style.opacity = '1';
           if (previewTextR) previewTextR.style.opacity = '1';
+          if (summaryR) previewSummaryR.style.opacity = '1';
       });
   }); 
 
@@ -74,17 +78,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // Preview logic for movie/TV show hover effect Liza
   const previewImage = document.getElementById('previewImage');
   const previewText = document.getElementById('previewText');
+  const summaryL = document.getElementById('summaryL');
 
-  document.querySelectorAll('.LM, .LTV').forEach(item => {
+
+  document.querySelectorAll('.LM, .LTV, .LWL').forEach(item => {
       item.addEventListener('mouseover', () => {
           const previewImgSrc = item.getAttribute('data-preview-img');
           const previewTextContent = item.getAttribute('data-preview-text');
+          const previewSummaryL = item.getAttribute("data-summaryL");
 
           if (previewImage) previewImage.src = previewImgSrc;
           if (previewText) previewText.textContent = previewTextContent;
+          if (summaryL) summaryL.textContent = previewSummaryL;
 
           if (previewImage) previewImage.style.opacity = '1';
           if (previewText) previewText.style.opacity = '1';
+          if (summaryL) previewSummaryL.style.opacity = '1';
       });
   }); 
 
