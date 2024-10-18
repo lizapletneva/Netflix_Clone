@@ -102,17 +102,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // Preview logic for movie/TV show hover effect Kat
   const previewImageK = document.getElementById('previewImageK');
   const previewTextK = document.getElementById('previewTextK');
+  const summaryK = document.getElementById('summaryK');
 
-  document.querySelectorAll('.KM, .KTV').forEach(item => {
+  document.querySelectorAll('.KM, .KTV, .KWL').forEach(item => {
       item.addEventListener('mouseover', () => {
           const previewImgSrc = item.getAttribute('data-preview-imgK');
           const previewTextContent = item.getAttribute('data-preview-textK');
+          const previewSummaryK = item.getAttribute("data-summaryK");
 
           if (previewImageK) previewImageK.src = previewImgSrc;
           if (previewTextK) previewTextK.textContent = previewTextContent;
+          if (summaryK) summaryK.textContent = previewSummaryK;
 
-          if (previewImageK) previewImage.style.opacity = '1';
-          if (previewTextK) previewText.style.opacity = '1';
+          if (previewImageK) previewImageK.style.opacity = '1';
+          if (previewTextK) previewTextK.style.opacity = '1';
+          if (summaryK) previewSummaryK.style.opacity = '1';
       });
   }); 
   

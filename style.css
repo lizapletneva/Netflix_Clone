@@ -368,7 +368,8 @@ a:hover {
 }
 
 .WelcomeRyan h2,
-.WelcomeLiza h2{
+.WelcomeLiza h2,
+.WelcomeKat h2{
     margin-top: 7%;
     margin-left: 4%;
     color:grey;
