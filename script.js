@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, 5000); 
 
-    
+    //dealing with profile pages and user selection
     const profileLinks = document.querySelectorAll('.profile-link');
 
     profileLinks.forEach(link => {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const previewTextR = document.getElementById('previewTextR');
   const summaryR = document.getElementById('summaryR')
 
-  document.querySelectorAll('.RM, .RTV').forEach(item => {
+  document.querySelectorAll('.RM, .RTV, .RWL').forEach(item => {
       item.addEventListener('mouseover', () => {
           const previewImgSrc = item.getAttribute('data-preview-imgR');
           const previewTextContent = item.getAttribute('data-preview-textR');
