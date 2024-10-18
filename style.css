@@ -21,17 +21,17 @@ html, body {
     animation-delay: 2.0s;
 }
 
-.n-1{
+.n-1 {
     background-color: #B10510;
     height: 400px;
     width: 80px;
-    top:400px;
+    top: 400px;
     position: absolute;
     animation: anim-top 0.2s linear forwards;
     animation-delay: 1.0s;
 }
 
-.n-1::after{
+.n-1::after {
     content: "";
     height: 7px;
     width: 100%;
@@ -39,10 +39,9 @@ html, body {
     position: absolute;
     bottom: -2px;
     transform: rotateZ(-3deg);
-
 }
 
-.n-3{
+.n-3 {
     background-color: #B10510;
     height: 400px;
     width: 80px;
@@ -51,7 +50,6 @@ html, body {
     position: absolute;
     animation: anim-top 0.2s linear forwards;
     animation-delay: 1.4s;
-
 }
 
 .n-3::after {
@@ -66,7 +64,7 @@ html, body {
     z-index: 99;
 }
 
-.n-2{
+.n-2 {
     background-color: transparent;
     height: 500px;
     width: 90px;
@@ -77,7 +75,7 @@ html, body {
     box-shadow: 4px, 4px, 15px, #00000085;
 }
 
-.filler{
+.filler {
     background-color: #E50815;
     height: 0px;
     animation: anim-filler 0.2s linear forwards;
@@ -85,43 +83,39 @@ html, body {
 }
 
 @keyframes anim-netflix {
-    0%{
+    0% {
         transform: scale(1);
     }
-    100%{
+    100% {
         transform: scale(20);
     }
 }
 
 @keyframes anim-top {
-    0%{
-        top:400px;
+    0% {
+        top: 400px;
     }
-    100%{
-        top:0px;
+    100% {
+        top: 0px;
     }
 }
 
-@keyframes anim-filler{
-    0%{
+@keyframes anim-filler {
+    0% {
         height: 0px;
     }
-    100%{
+    100% {
         height: 500px;
     }
 }
 
-
-
 /* Profile Selection Page Styles */
-
 .hidden {
     display: none;
 }
 
 .whos-watching {
     text-align: center;
-    
 }
 
 .whos-watching a {
@@ -180,8 +174,12 @@ a:hover {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes bounce-in {
@@ -201,139 +199,123 @@ a:hover {
     }
 }
 
-
-/*Personal pages*/
-
-.personal-page{
+/* Personal pages */
+.personal-page {
     width: 100%;
     height: 100%;
     display: none;
     overflow-y: scroll;
 }
 
-.hidden{
-    display: none;
-}
-
 .LizaMovies, 
 .RyanMovies,
-.KatMovies{
+.KatMovies {
     margin: 0 0 0 225px;
     height: 50%;
-    width:70%;
-    display:flex;
-    justify-content:center;
-    gap:5px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 .LizaMovies img,
 .RyanMovies img,
-.KatMovies img{
-    width:15%;
-    height:70%;
+.KatMovies img,
+.LizaTV img,
+.RyanTV img,
+.KatTV img,
+.LizaWatch img,
+.RyanWatch img,
+.KatWatch img {
+    width: 15%;
+    height: 70%;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid white;
-    transition: all ease-in-out 0.5s;
+    transition: transform 0.5s ease, border 0.5s ease; /* Transition smoothness */
+    will-change: transform; /* Performance optimization */
 }
 
 .LizaMovies img:hover,
 .RyanMovies img:hover,
-.KatMovies img:hover{
-    width:50%;
+.KatMovies img:hover,
+.LizaTV img:hover,
+.RyanTV img:hover,
+.KatTV img:hover,
+.LizaWatch img:hover,
+.RyanWatch img:hover,
+.KatWatch img:hover {
+    transform: scale(1.1); /* Reduced scale on hover */
+    border-color: #E50815; /* Optional: change border color on hover */
 }
 
-.MovieTitle{
+.MovieTitle {
     margin-top: 420px;
-    padding-left:6%;
+    padding-left: 6%;
+    font-style: italic;
+    color:rgb(245, 205, 205);
+    font-size: 0.7rem;
 }
 
 .TVTitle,
-.WatchListTitle{
+.WatchListTitle {
     padding-left: 6%;
+    font-style: italic;
+    color:rgb(245, 205, 205);
+    font-size: 0.7rem;
 }
 
 .LizaTV,
 .RyanTV,
-.KatTV{
+.KatTV {
     margin: 0 0 0 225px;
     height: 50%;
-    width:70%;
-    display:flex;
-    justify-content:center;
-    gap:5px;
-}
-
-.LizaTV img,
-.RyanTV img,
-.KatTV img{
-    width:15%;
-    height:70%;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid white;
-    transition: all ease-in-out 0.5s;
-}
-
-.LizaTV img:hover,
-.RyanTV img:hover,
-.KatTV img:hover{
-    width:50%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 .LizaWatch,
 .RyanWatch,
-.KatWatch{
+.KatWatch {
     margin: 0 0 0 225px;
     height: 50%;
-    width:70%;
-    display:flex;
-    justify-content:center;
-    gap:5px;
-}
-
-.LizaWatch img,
-.RyanWatch img,
-.KatWatch img{
-    width:15%;
-    height:70%;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid white;
-    transition: all ease-in-out 0.5s;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 .WelcomeLiza, 
 .WelcomeRyan,
-.WelcomeKat{
+.WelcomeKat {
     position: fixed;
-    height:60%;
-    width:95%;
+    height: 60%;
+    width: 95%;
     background-color: black;
     left: 2.5%;
     z-index: 10;
 }
 
-
 .previewImage,
 .previewImageR,
-.previewImageK 
+.previewImageK,
 .previewText,
 .previewTextR,
-.previewTextk {
+.previewTextK {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-
 .LM:hover ~ .WelcomeLiza #previewImage,
 .LTV:hover ~ .WelcomeLiza #previewImage,
 .LM:hover ~ .WelcomeLiza #previewText,
-.LTV:hover ~ .WelcomeLiza #previewText 
+.LTV:hover ~ .WelcomeLiza #previewText,
 .RM:hover ~ .WelcomeRyan #previewImageR,
 .RTV:hover ~ .WelcomeRyan #previewImageR,
 .RM:hover ~ .WelcomeRyan #previewTextR,
-.RTV:hover ~ .WelcomeRyan #previewTextR 
+.RTV:hover ~ .WelcomeRyan #previewTextR,
 .KM:hover ~ .WelcomeKat #previewImageK,
 .KTV:hover ~ .WelcomeKat #previewImageK,
 .KM:hover ~ .WelcomeKat #previewTextK,
@@ -341,10 +323,9 @@ a:hover {
     opacity: 1;
 }
 
-
 .WelcomeLiza img,
 .WelcomeRyan img,
-.WelcomeKat img{
+.WelcomeKat img {
     height: 55%;
     width: 50%;
     position: fixed;
@@ -357,25 +338,27 @@ a:hover {
 
 .WelcomeLiza h1, 
 .WelcomeRyan h1,
-.WelcomeKat h1{
+.WelcomeKat h1 {
     position: absolute;
     top: 20px; 
     color: white;
     height: 80%;
     width: 35%;
     left: 4%;
-    z-index: 20; /* Higher than the image*/ 
+    z-index: 20; /* Higher than the image */ 
 }
 
 .WelcomeRyan h2,
 .WelcomeLiza h2,
-.WelcomeKat h2{
+.WelcomeKat h2 {
     margin-top: 7%;
     margin-left: 4%;
-    color:grey;
+    color: grey;
     height: 80%;
     text-indent: 0;
     width: 34%;
 }
+
+
 
 
